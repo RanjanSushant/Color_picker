@@ -16,6 +16,21 @@ body {
   background: #cbcdcd;
 }
 
+.logo {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  width: 250px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  opacity: 0.8;
+  border-top-left-radius: 1.5em;
+  border-bottom-right-radius: 1.5em;
+}
+
 .container {
   max-width: 600px;
   height: 90vh;
