@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Padauk&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Color Picker | Sushant Ranjan</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Color Picker</h1>
+      <form class="color-form">
+        <input type="color" id="select-color" />
+
+        <div class="select-mode">
+          <select name="mode-select" id="select-mode">
+            <option class="select-item" value="monochrome" selected>
+              Monochrome
+            </option>
+            <option class="select-item" value="monochrome-dark">
+              Monochrome-Dark
+            </option>
+            <option class="select-item" value="monochrome-light">
+              Monochrome-Light
+            </option>
+            <option class="select-item" value="analogic">Analogic</option>
+            <option class="select-item" value="complement">Complement</option>
+            <option class="select-item" value="analogic-complement">
+              Analogic-Complement
+            </option>
+            <option class="select-item" value="triad">Triad</option>
+            <option class="select-item" value="quad">Quad</option>
+          </select>
+        </div>
+
+        <button id="get-color-scheme-btn">Get Color Scheme</button>
+      </form>
+
+      <div class="grid-container">
+        <div class="color1 colordiv" id="color1"></div>
+        <div class="color2 colordiv" id="color2"></div>
+        <div class="color3 colordiv" id="color3"></div>
+        <div class="color4 colordiv" id="color4"></div>
+        <div class="color5 colordiv" id="color5"></div>
+
+        <p class="name1 namediv" id="name1">Black</p>
+        <p class="name2 namediv" id="name2">Eerie Black</p>
+        <p class="name3 namediv" id="name3">Mine Shaft</p>
+        <p class="name4 namediv" id="name4">Emperor</p>
+        <p class="name5 namediv" id="name5">Granite Gray</p>
+
+        <p class="hex1 hexdiv" id="hex1">#000000</p>
+        <p class="hex2 hexdiv" id="hex2">#1A1919</p>
+        <p class="hex3 hexdiv" id="hex3">#343232</p>
+        <p class="hex4 hexdiv" id="hex4">#4F4A4A</p>
+        <p class="hex5 hexdiv" id="hex5">#6A6262</p>
+
+        <p class="rgb1 rgbdiv" id="rgb1">rgb(0, 0, 0)</p>
+        <p class="rgb2 rgbdiv" id="rgb2">rgb(26, 25, 25)</p>
+        <p class="rgb3 rgbdiv" id="rgb3">rgb(52, 50, 50)</p>
+        <p class="rgb4 rgbdiv" id="rgb4">rgb(79, 74, 74)</p>
+        <p class="rgb5 rgbdiv" id="rgb5">rgb(106, 98, 98)</p>
+
+        <p class="hsl1 hsldiv" id="hsl1">hsl(0, 0%, 0%)</p>
+        <p class="hsl2 hsldiv" id="hsl2">hsl(0, 2%, 10%)</p>
+        <p class="hsl3 hsldiv" id="hsl3">hsl(0, 2%, 20%)</p>
+        <p class="hsl4 hsldiv" id="hsl4">hsl(0, 3%, 30%)</p>
+        <p class="hsl5 hsldiv" id="hsl5">hsl(0, 4%, 40%)</p>
+      </div>
+      <p class="clipboard"><i>Click value to copy</i></p>
+    </div>
+  </body>
+</html>

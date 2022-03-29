@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Padauk", sans-serif;
+  display: flex;
+  align-items: center;
+  color: #d5d4d8;
+  background: #cbcdcd;
+}
+
+.container {
+  max-width: 600px;
+  height: 90vh;
+  margin: 0 auto;
+  border: 2px solid #1f2937;
+  background: #1f2937;
+  padding: 1em 0.5em;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+}
+
+/* h1 {
+  margin-top: auto;
+} */
+
+.color-form {
+  /* border: 2px solid blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 12px;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.15);
+  padding: 1.5em 1em;
+}
+
+.select-mode {
+  /* border: 2px solid yellow; */
+  width: 60%;
+  position: relative;
+  font-family: inherit;
+}
+
+.select-mode select {
+  font-family: inherit;
+  background: #1f2937;
+  color: inherit;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.6em 0.8em;
+  width: 100%;
+  height: 42px;
+  border: 1px solid white;
+  padding: 0;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+/* .select-mode select option {
+  background: inherit;
+} */
+
+.color-form button {
+  border: none;
+  font-family: inherit;
+  width: 24%;
+  background: #3d4b60;
+  /* shadow/sm */
+
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  padding: 0.7em;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: white;
+}
+
+.color-form input {
+  width: 12%;
+  height: 42px;
+  border: 0.5px solid #313131;
+  padding: 2px;
+}
+
+.grid-container {
+  /* border: 3px solid magenta; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  grid-template-areas:
+    "color1 color2 color3 color4 color5"
+    "color1 color2 color3 color4 color5"
+    "color1 color2 color3 color4 color5"
+    "color1 color2 color3 color4 color5"
+    "color1 color2 color3 color4 color5"
+    "color1 color2 color3 color4 color5"
+    "color1 color2 color3 color4 color5"
+    "color1 color2 color3 color4 color5"
+    "color1 color2 color3 color4 color5"
+    "color1 color2 color3 color4 color5"
+    "color1 color2 color3 color4 color5"
+    "color1 color2 color3 color4 color5"
+    "color1 color2 color3 color4 color5"
+    "name1 name2 name3 name4 name5"
+    "hex1 hex2 hex3 hex4 hex5"
+    "rgb1 rgb2 rgb3 rgb4 rgb5"
+    "hsl1 hsl2 hsl3 hsl4 hsl5";
+}
+
+.color1 {
+  grid-area: color1;
+  background: #000;
+  /* border: 2px solid orange; */
+}
+
+.color2 {
+  grid-area: color2;
+  background: #1a1919;
+  /* border: 2px solid orange; */
+}
+
+.color3 {
+  grid-area: color3;
+  background: #343232;
+  /* border: 2px solid orange; */
+}
+
+.color4 {
+  grid-area: color4;
+  background: #4f4a4a;
+  /* border: 2px solid orange; */
+}
+
+.color5 {
+  grid-area: color5;
+  background: #6a6262;
+  /* border: 2px solid orange; */
+}
+
+.namediv,
+.hexdiv,
+.rgbdiv,
+.hsldiv {
+  justify-self: center;
+  align-self: baseline;
+  /* border: 1px solid purple; */
+  /* padding: 1em 5em; */
+  grid-gap: 0.9em;
+}
+
+.name1 {
+  grid-area: name1;
+}
+
+.name2 {
+  grid-area: name2;
+}
+
+.name3 {
+  grid-area: name3;
+}
+
+.name4 {
+  grid-area: name4;
+}
+
+.name5 {
+  grid-area: name5;
+}
+
+.clipboard {
+  font-size: 1.2rem;
+  color: greenyellow;
+  margin-top: 1em;
+}
